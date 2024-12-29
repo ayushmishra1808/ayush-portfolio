@@ -1,0 +1,671 @@
+* {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  /* margin: 10px; */
+  padding: 10px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.myprojects {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  height: 260px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 45px; */
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-family: "Sometype Mono";
+}
+
+.ayush {
+  padding: 0;
+}
+
+.listmenu {
+  border: 10px black;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.itmes:hover {
+  text-decoration-line: underline;
+  color: yellowgreen;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Sometype Mono";
+}
+
+.call {
+  color: rgb(2, 216, 102);
+  height: 40px;
+  width: 100px;
+  align-content: center;
+  text-align: center;
+  border-width: 10px;
+  border-radius: 15px;
+  border: solid;
+}
+
+.banner {
+  /* position: relative; */
+  overflow: none;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: start;
+  background: url(./assets/images/herobanner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px 0 10px;
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 600px;
+  }
+}
+
+/* .banner::after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background: rgba(1, 88, 43, 0.5);    
+    z-index: ;
+} */
+
+.bannertext {
+  display: block;
+  width: 400px;
+  background-color: transparent;
+}
+
+.mainname {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: transparent;
+  font-size: 80px;
+  font-family: "urbanist";
+}
+
+@media (max-width: 500px) {
+  .mainname {
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
+}
+
+.Workdetails {
+  font-size: 25px;
+  font-family: "Sometype Mono";
+  color: rgb(2, 216, 102);
+  background-color: transparent;
+}
+
+.bannerimage {
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  border: 10px solid rgb(255, 255, 255);
+  object-fit: cover;
+  z-index: 2;
+}
+
+.messagebox {
+  background-color: transparent;
+  padding-top: 200px;
+  padding-right: 200px;
+}
+
+@media (max-width: 800px) {
+  .messagebox {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .messagebox {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.meassagebox1 {
+  /* line-height: 6px; */
+  background-color: rgb(0, 80, 38, 0.6);
+  /* height: 70px; */
+  width: 290px;
+  border: solid rgb(0, 80, 38, 0.1);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  font-family: "Sometype Mono";
+}
+
+.meassagebox2 {
+  line-height: 6px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: rgb(74, 74, 74, 0.6);
+  height: 60px;
+  width: 290px;
+  border: solid rgb(74, 74, 74, 0.1);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  font-family: "Sometype Mono";
+}
+
+@media (max-width: 500px) {
+  .meassagebox2,
+  .meassagebox1 {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.text {
+  background-color: transparent;
+}
+
+.textcolor {
+  color: rgb(2, 216, 102);
+}
+
+.searchbox {
+  background-color: #4a4a4a;
+  height: 35px;
+  width: 260px;
+  border-radius: 10px;
+  border: solid #4a4a4a;
+  font-family: "sometype mono";
+  padding: 5px;
+}
+
+@media (max-width: 500px) {
+  .searchbox {
+    height: 40px;
+  }
+}
+
+.searchbox:focus {
+  outline: none;
+  border: none;
+}
+
+.searchboxdiv {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+@media (max-width: 500px) {
+  .searchboxdiv {
+    padding: 20px 0px;
+  }
+}
+
+.icon-color i {
+  background-color: rgb(2, 216, 102);
+  height: 35px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .icon-color i {
+    height: 40px;
+    padding: 14px;
+  }
+}
+
+.helloline {
+  font-family: "urbanist";
+  text-align: center;
+  margin-top: 90px;
+}
+
+.tab {
+  /* overflow: hidden; */
+  /* border: 1px solid #ccc; */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  div .tab {
+    flex-direction: row;
+    overflow: none; 
+  }
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: "sometype mono";
+  position: relative;
+}
+
+@media (max-width: 500px) {
+    .tab button {
+        font-size: 12px;
+    }
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: rgb(2, 216, 102);
+  background-color: #4a4a4a;
+  border-radius: 10px;
+}
+
+.tab button:hover::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  width: 2px;
+  background-color: rgb(2, 216, 102);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: rgb(2, 216, 102);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
+
+@media (max-width:500px){
+    .tabcontent{
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+}
+
+.tab button.active::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  width: 2px;
+  background-color: rgb(2, 216, 102);
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 700px;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+  font-family: "sometype mono";
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.profilelinks {
+  margin-top: 30px;
+  font-family: "sometype mono";
+  font-size: 18px;
+}
+
+@media (max-width:500px){
+    .profilelinks{
+        font-size: 14px;
+    }
+}
+
+.link {
+  color: rgb(2, 216, 102);
+  text-decoration: none;
+}
+
+.linkwrap {
+    display: flex;
+    gap: 10px;
+    justify-content: center
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.selectedprojects {
+  text-align: center;
+  margin: 90px 0px 30px 0px;
+  font-family: "urbanist";
+  font-size: 25px;
+}
+
+.images {
+  /* position: relative; */
+  height: 260px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.images:hover {
+  box-shadow: 0px 1px 2px 4px rgb(2, 216, 102);
+}
+
+.desc {
+  padding-top: 5px;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  height: 450px;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 0px 2px;
+  }
+}
+
+.container1 {
+  font-family: "sometype mono";
+  width: 200px;
+}
+
+.container2 {
+  font-family: "sometype mono";
+  width: 200px;
+  align-self: flex-end;
+}
+
+@media (max-width:800px){
+    .container2{
+        align-self: normal;
+    }
+}
+
+.sno {
+  font-size: 30px;
+  color: rgb(2, 216, 102);
+}
+
+.heading {
+  font-family: "urbanist";
+}
+
+.heading:hover a {
+  color: rgb(2, 216, 102);
+}
+
+.skills {
+  padding: 0px 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 25px;
+}
+
+@media (max-width: 800px) {
+  .skills {
+    padding: 0;
+  }
+}
+
+.skillsname {
+  display: block;
+  padding: 10px 4px 4px 4px;
+  text-align: center;
+  font-family: "sometype mono";
+  background: transparent;
+}
+
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(81, 81, 81);
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#contactform {
+  /* padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 5px rgb(2, 216, 102);
+    max-width: 700px; */
+  margin-left: 550px;
+  margin-right: 550px;
+  line-height: 40px;
+}
+
+@media (max-width: 800px) {
+  #contactform {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+    #contactform {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+}
+
+.language {
+  font-family: "sometype mono";
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 90px 0px 10px;
+}
+
+.proficient {
+  display: block;
+  font-family: "sometype mono";
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 25px;
+  color: #4a4a4a;
+}
+
+.ayushemail a {
+  font-family: "urbanist";
+  color: rgb(2, 216, 102);
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 500px) {
+  .ayushemail a {
+    font-size: 22px;
+  }
+}
+
+.formgroup {
+  margin-bottom: 5px;
+  font-family: "sometype mono";
+  font-weight: 600;
+  width: 100%;
+}
+
+.contactwrapper {
+  display: flex;
+  column-gap: 10px;
+}
+
+label {
+  font-family: "urbanist";
+  line-height: 25px;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: #2d2d2d;
+  font-family: "sometype mono";
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+input:hover {
+  border-color: rgb(2, 216, 102);
+}
+
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "sometype mono";
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(2, 216, 102);
+  font-weight: 300;
+  border-radius: 10px;
+  border: 2px solid rgb(2, 216, 102);
+}
+
+.form-container {
+  padding-bottom: 30px;
+}
+
+.footerwrap2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+
+@media (max-width:500px){
+    .footerwrap2{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        row-gap: 5px;
+        font-size: 12px;
+        padding: 10px 30px 20px 30px;
+    }
+}
+.copyright {
+  font-family: "sometype mono";
+  font-size: 15px;
+}
+
+.footerwrap1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px 30px 0 30px;
+}
+
+@media (max-width:500px){
+    .footerwrap1{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        row-gap: 15px;
+        font-size: 20px;
+    }
+}
+
+.delhi {
+  font-size: 50px;
+  font-family: "urbanist";
+  font-weight: 600;
+}
+
+.india {
+  font-size: 50px;
+  font-family: "sometype mono";
+  font-weight: 600;
+}
+
+@media (max-width:400px){
+    .delhi, .india{
+        font-size: 40px;
+    }
+}
+
+.giticon{
+    display: flex;
+    gap: 10px;
+}
