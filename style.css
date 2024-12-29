@@ -96,6 +96,7 @@ h2 {
   background-position: center;
   background-size: cover;
   padding: 0 10px ;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .banner {
@@ -235,17 +236,20 @@ h2 {
 
 .searchbox {
   background-color: #4a4a4a;
-  height: 35px;
-  width: 260px;
+  height: 50px;
+  width: 300px;
   border-radius: 10px;
   border: solid #4a4a4a;
   font-family: "sometype mono";
   padding: 5px;
+  box-shadow: 0px 0px 8px 4px rgb(2, 216, 102, 0.6);
 }
 
 @media (max-width: 500px) {
   .searchbox {
-    height: 40px;
+    height: 50px;
+    width: 260px;
+    box-shadow: 0px 0px 5px 3px rgb(2, 216, 102, 0.6);
   }
 }
 
@@ -258,7 +262,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  gap: 10px;
+  gap: 20px;
 }
 
 @media (max-width: 500px) {
@@ -267,17 +271,22 @@ h2 {
   }
 }
 
-.icon-color i {
+.planewrap{
+  height: 45;
   background-color: rgb(2, 216, 102);
-  height: 35px;
-  padding: 10px;
+  padding: 5px 10px 8px;
   border-radius: 5px;
 }
 
+i{
+  background-color: transparent;
+}
+
 @media (max-width: 500px) {
-  .icon-color i {
-    height: 40px;
-    padding: 14px;
+  .planewrap {
+    height: 50px;
+    text-align: center;
+    padding: 5px 10px 7px 10px;
   }
 }
 
