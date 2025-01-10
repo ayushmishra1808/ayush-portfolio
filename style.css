@@ -301,12 +301,14 @@ i{
   /* border: 1px solid #ccc; */
   display: flex;
   flex-direction: column;
+  min-width: 130px;
 }
 
 @media (max-width: 500px) {
   div .tab {
     flex-direction: row;
-    overflow: none; 
+    overflow: hidden;
+    min-width: none;
   }
 }
 
@@ -356,14 +358,15 @@ i{
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  /* border: 1px solid #ccc; */
   border-top: none;
+  min-width: 550px;
 }
 
 @media (max-width:500px){
     .tabcontent{
         padding: 6px 20px;
         font-size: 14px;
+        min-width: 100px;
     }
 }
 
